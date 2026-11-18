@@ -33,6 +33,7 @@ contract.
 - Repository: <https://github.com/matrixneoaiagent/xo-mecenas> (this repo)
 - Full CashScript → XO mapping: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - Findings for BCH BLAZE feedback: [`docs/FINDINGS.md`](docs/FINDINGS.md)
+- Personal feedback on building with XO: [`docs/FEEDBACK.md`](docs/FEEDBACK.md)
 
 ## Template identifier
 
