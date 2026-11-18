@@ -200,8 +200,8 @@ Screenshots: `docs/explorer/`.
 |---|---|---|
 | create Mecenas A | `9be34854c7708a50500f0225275c7549f29634616ba0d430410a061202b38294` | 20,000 sats, pledge 5,000, period 1 block |
 | withdraw A round 1 (partial) | `c9b4c9b978a23b8aa1afaec505ac7a9d8b29227cad1f0608a24f41a3e06f622c` | recipient 5,000, covenant carries 13,500 |
-| withdraw A round 2 (partial) | *(filled after confirmation; see docs/REPRODUCTION.md)* | recipient 5,000, covenant carries 7,000 |
-| withdraw A round 3 (final) | *(filled after confirmation)* | recipient 5,500, covenant closes |
+| withdraw A round 2 (partial) | `e01111767b0a601150ad37452321a55279934a84079d315da8bd707f10520bfa` | recipient 5,000, covenant carries 7,000 |
+| withdraw A round 3 (`withdrawFinal`) | `84eb5ffeccdb7bafc065047fca2a4ebacc45d2b23590517dbea03a1d90ac9c5c` | recipient 5,500, covenant closes (1 input, 1 output) |
 | create Mecenas B | `36348b5d07ee22b83e01004690eaee7c6ed90ca84b4889d5e07886bb1066e95b` | 8,000 sats, pledge 3,000, period 100,000 blocks (deliberately unreachable) |
 | reclaim B | `33306f44f601f767b56b4bc96f7713c1a016af99d49d06be93969627e4dd7a66` | funder reclaims 6,000 sats, despite the 100,000-block period, confirming reclaim ignores the age gate |
 

@@ -51,6 +51,17 @@ accepted." This is environmental (Chipnet-side), not a template bug, but it
 is exactly the kind of integration surprise this bounty's "demonstrate it on
 Chipnet" requirement is meant to surface.
 
+**This pattern repeated three times in the same run**, not as a one-off
+fluke: each of the three sequential `withdraw`/`withdrawFinal` rounds in the
+final Chipnet run (txids
+`c9b4c9b978a23b8aa1afaec505ac7a9d8b29227cad1f0608a24f41a3e06f622c`,
+`e01111767b0a601150ad37452321a55279934a84079d315da8bd707f10520bfa`,
+`84eb5ffeccdb7bafc065047fca2a4ebacc45d2b23590517dbea03a1d90ac9c5c`) needed
+roughly 10-12 retries, one per minute, after its ancestor's first
+confirmation before the identical, unchanged transaction was accepted —
+consistently well beyond what `periodBlocks = 1` should require by the
+textbook BIP68 formula.
+
 ## 2. Over-cap withdrawal is rejected at both the VM and network level (the required negative test)
 
 **What happened.** `scripts/reject-overcap.ts` deliberately builds a
