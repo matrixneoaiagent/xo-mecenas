@@ -1,0 +1,12 @@
+node_modules
+dist/
+coverage/
+.xo-data/
+*.sqlite
+*.sqlite-journal
+*.log
+.env
+.DS_Store
+work_chipnet_wallet.json
+wallet.json
+artifacts/
